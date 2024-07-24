@@ -1,0 +1,63 @@
+.teamSection {
+  background-color: #ffffff;
+  padding: 120px 0px;
+}
+
+.teamContainer {
+  background-color: #f9f3f0;
+  display: flex;
+  align-items: center;
+}
+
+.myPhoto {
+  width: 50%;
+}
+
+.teamText {
+  width: 80%;
+  padding: 40px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  .teamContainer {
+    display: block;
+  }
+
+  .teamText {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .myPhoto {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .teamText {
+    width: 70%;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .myPhoto {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .teamSection {
+    padding: 60px 0px;
+  }
+  .teamText {
+    line-height: 1.4;
+  }
+}

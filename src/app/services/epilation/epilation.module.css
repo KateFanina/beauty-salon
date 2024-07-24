@@ -1,0 +1,253 @@
+.epilationSection,
+.epilationsSection {
+  padding: 100px 0px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.waxBlock {
+  display: flex;
+  align-items: center;
+}
+
+.waxImg {
+  width: 60% !important;
+}
+
+.wax {
+  width: 40% !important;
+}
+
+.epilationTitle {
+  color: #000000;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.epilationText {
+  color: #6e6e6e;
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.sugaringSection {
+  background-image: url('../../../../public/flower_shape_3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.sugaringBlock {
+  display: flex;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.sugaringImg,
+.beautyImg {
+  width: 50%;
+}
+
+.waxText {
+  padding: 0px 15px;
+  width: 50%;
+  text-align: center;
+}
+
+.epilationBlock {
+  display: flex;
+  align-items: center;
+}
+
+.epilationList {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.epilationItem {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.epilationTitleWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.iconWrapper {
+  fill: #c28565;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.epilationItem:hover .iconWrapper {
+  transform: rotateY(180deg);
+}
+
+.epilationSubtitle {
+  color: #0d0d0d;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.epilationDesc {
+  color: #6e6e6e;
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.flowerShape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.flowersShape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.shape {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.shape {
+  -webkit-animation: slidein 7s linear infinite;
+  animation: slidein 7s linear infinite;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.flowerImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.flowerImg {
+  -webkit-animation: jump 7s linear infinite;
+  animation: jump 7s linear infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 767px) {
+  .epilationItem{
+    margin-bottom: 20px;
+  }
+  .epilationText {
+    font-size: 18px;
+    color: #0d0d0d;
+  }
+  .epilationSubtitle{
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  .epilationDesc{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .epilationText {
+    font-size: 20px;
+    color: #0d0d0d;
+  }
+}
+@media (max-width: 1023px) {
+  .epilationSection {
+    background-image: url('../../../../public/wax_img_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #ffffff;
+  }
+
+  .epilationSection,
+  .sugaringBlock,
+  .epilationsSection {
+    padding: 60px 0px;
+  }
+
+  .epilationTitle {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  
+  .epilationDesc{
+    font-size: 18px;
+  }
+
+  .waxImg,
+  .shape,
+  .beautyImg,
+  .flowerImg {
+    display: none;
+  }
+
+  .wax,
+  .waxText,
+  .epilationList {
+    width: 100% !important;
+  }
+
+  .sugaringSection {
+    background-image: url('../../../../public/sugaring_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+}
+
+@media (max-width: 1279px) {
+  .sugaringImg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .epilationList {
+    width: 90% !important;
+  }
+  .epilationText {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.mobileMenuWrapper {
+  width: 100%;
+  max-width: 320px;
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+  transition: all ease 1s;
+  z-index: 1;
+}
+.mobileLogo {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+  background-color: #c28565;
+}
+.logo {
+  width: 30%;
+  height: 30%;
+  margin: 0 auto;
+}

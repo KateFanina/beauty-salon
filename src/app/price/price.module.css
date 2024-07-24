@@ -1,0 +1,48 @@
+.priceBg {
+  background-image: url('../../../public/happy_woman.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+  transition: all 0.5s ease 0s;
+}
+
+.priceStyle {
+  padding: 238px 0px;
+  max-width: 700px;
+}
+
+.priceTitle {
+  font-size: 44px;
+  line-height: 1.9;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .priceStyle {
+    padding: 80px 0px;
+    max-width: 200px;
+  }
+  .priceTitle {
+    font-size: 32px;
+    line-height: 1.9;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .priceStyle {
+    padding: 120px 0px;
+    max-width: 300px;
+  }
+  .priceTitle {
+    font-size: 36px;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .priceTitle {
+    font-size: 40px;
+  }
+}

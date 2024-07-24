@@ -1,27 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css?family=Balsamiq+Sans:wght@400;700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext&effect=fire-animation|neon|outline'); */
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --primary-color: #c28565;
+	--primary-text-color: #6e6e6e;
+	--secondary-text-color: #2e2e2e;
+	--title-color: #0d0d0d;
+	--white-color: #ffffff;
+  --primary-bg-color: #f9f3f0;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  /* timig*/
+  --animation-duration: 7s linear infinite;
+  --timing-duration:all 250ms ease-in-out;
+  /* transition-timing-function */
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #2e2e2e;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 400;
+  background-size: 200px;
+  background-color: #f9f3f0;
+  min-height: 100vh;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+a:hover {
+  color: #c28565;
+}
+
+header svg {
+  color: #c28565;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #c28565;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 6px;
+}
+header svg:hover {
+  background-color: #c28565;
+  color: #ffffff;
+}
+
+footer svg {
+  background-color: #c28565;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 6px;
+}
+footer svg:hover {
+  background-color: #f9f3f0;
+  color: #c28565;
+  border: 1px solid #c28565;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 20px 0px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
+
+.not-found {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+}
+
+.not-found a {
+  color: #0d00ff;
+  text-decoration: underline;
 }

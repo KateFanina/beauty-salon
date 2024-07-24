@@ -1,0 +1,264 @@
+.bgWoman {
+  background-image: url('../../../../public/face_care_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px;
+  position: relative;
+}
+
+.cosmetologyTitle {
+  color: #0d0d0d;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.cosmetologyList {
+  width: 50%;
+  padding: 0px 30px 0px 30px;
+}
+
+.cosmetologyItem {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.cosmetologyItem:last-child {
+  margin-bottom: 0;
+}
+
+.cosmetologySubTitle {
+  color: #0d0d0d;
+  font-size: 24px;
+  line-height: 1.417;
+  margin-bottom: 8px;
+}
+
+.cosmetologyText {
+  font-size: 18px;
+  color: #6e6e6e;
+  text-align: justify;
+}
+
+.iconWrapper {
+  fill: #c28565;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 12px;
+  margin-right: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.cosmetologyItem:hover .iconWrapper {
+  transform: rotateY(180deg);
+}
+
+.cosmetologyShape {
+  position: absolute;
+  bottom: -17%;
+  right: 10%;
+  z-index: 2;
+  animation: slidein 7s linear infinite;
+  -webkit-animation: slidein 7s linear infinite;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.browsSection {
+  background-color: #ffffff;
+  padding-top: 120px;
+  position: relative;
+  z-index: 1;
+}
+
+.browsImgWrapper {
+  width: 50%;
+}
+
+.browsBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row-reverse;
+}
+
+.browsTitle {
+  color: #0d0d0d;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.browsList {
+  padding: 0 30px 30px 30px;
+  width: 50%;
+  text-align: justify;
+}
+
+.browsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.browsIcon {
+  fill: #c28565;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.browsItem {
+  margin-bottom: 20px;
+}
+
+.browsItem:last-child {
+  margin-bottom: 0;
+}
+
+.browsItem:hover .browsIcon {
+  transform: rotateY(180deg);
+}
+
+.browsImgShape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.browsShapeWrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.browsShape {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  z-index: 2;
+  animation: slidein 7s linear infinite;
+  -webkit-animation: slidein 7s linear infinite;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .bgWoman {
+    background-image: none;
+  }
+
+  .cosmetologyTitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .bgWoman,
+  .browsSection {
+    padding: 60px 0px;
+  }
+
+  .cosmetologyTitle,
+  .browsTitle {
+    font-size: 32px;
+  }
+
+  .cosmetologyList,
+  .browsList {
+    width: 100%;
+  }
+
+  .browsImgWrapper {
+    width: 0% !important;
+  }
+
+  .cosmetologySubTitle {
+    font-size: 20px;
+  }
+
+  .cosmetologyText {
+    font-size: 16px;
+  }
+
+  .cosmetologyShape,
+  .browsShape {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cosmetologyList {
+    width: 70% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .browsShape {
+    bottom: 17%;
+    left: 0;
+    width: 50%;
+  }
+
+  .browsList {
+    padding: 0px 0px 30px 30px;
+  }
+
+  .cosmetologyTitle,
+  .browsTitle {
+    font-size: 36px;
+  }
+
+  .cosmetologyList {
+    width: 60% !important;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .browsShape {
+    bottom: 8%;
+    left: 0;
+  }
+}

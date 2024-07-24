@@ -1,0 +1,56 @@
+.heroBtn {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #c28565;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 21px 30px;
+  border-radius: 4px;
+  transition: all ease 0.4s;
+}
+
+.caption,
+.iconWrapper {
+  color: #ffffff;
+  z-index: 5;
+}
+
+.heroBtn:before,
+.heroBtn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 99px;
+  transition: all 0.4s ease-out;
+}
+
+.heroBtn:before {
+  transform: scaleY(0);
+  background: #0d0d0d;
+  color: #ffffff;
+}
+
+.heroBtn:after {
+  background: #0d0d0d;
+  color: #ffffff;
+  transform: scaleX(0);
+}
+
+.heroBtn:hover:before,
+.heroBtn:hover:after {
+  transform: scale(1);
+  border-radius: 0px;
+}

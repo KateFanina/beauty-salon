@@ -1,0 +1,262 @@
+.aboutSection {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.imgWrapper {
+  width: 50%;
+}
+
+.imgWrapperTwo {
+  position: relative;
+}
+
+.textWrapper {
+  width: 50%;
+  padding-left: 24px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.aboutHaircut {
+  border-radius: 100px 0px 0px 0px;
+  max-width: 343px;
+}
+
+.aboutHaircut:not([draggable]) {
+  height: auto;
+}
+
+.aboutHairWrapper {
+  position: absolute;
+  right: 0;
+  bottom: -22%;
+}
+
+.aboutHaircutMan {
+  border-radius: 0px 100px 0px 100px;
+  max-width: 300px;
+}
+
+.hairTool {
+  position: absolute;
+  width: 250px;
+  bottom: -40%;
+  left: 35%;
+}
+
+.hairTool {
+  -webkit-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 48px;
+  line-height: 1.227;
+  color: #c28565;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.aboutDescription {
+  border-left: 3px solid #c28565;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0 0 145px 0;
+  color: #6e6e6e;
+  line-height: 1.75;
+}
+
+.heroBtn {
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #c28565;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 21px 30px;
+  border-radius: 4px;
+  transition: all ease 0.4s;
+}
+
+.heroBtn:hover {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.flowerImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.flowerImg {
+  -webkit-animation: jump 7s linear infinite;
+  animation: jump 7s linear infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 639px) {
+  .hairTool {
+    bottom: 55%;
+    left: 1%;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .hairTool {
+    bottom: 55%;
+    left: 5%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutHairWrapper {
+    display: none;
+  }
+
+  .flowerImg {
+    display: none;
+  }
+
+  .imgWrapperTwo {
+    z-index: 1;
+  }
+
+  .aboutHaircut {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutDescription {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hairTool {
+    bottom: -15%;
+    left: 30%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .textWrapper {
+    width: 100%;
+  }
+
+  .imgWrapper {
+    width: 100%;
+  }
+
+  .imgWrapperTwo {
+    margin-bottom: 70px;
+  }
+
+  .about {
+    font-size: 34px;
+    line-height: 1.7;
+  }
+
+  .aboutSection {
+    padding: 60px 0px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .aboutHairWrapper {
+    right: 10%;
+    bottom: -10%;
+  }
+
+  .aboutDescription {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .about {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .imgWrapper {
+    width: 90%;
+  }
+
+  .imgWrapperTwo {
+    margin-bottom: 70px;
+  }
+
+  .textWrapper {
+    width: 100%;
+  }
+
+  .aboutHairWrapper {
+    right: 10%;
+    bottom: -10%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutDescription {
+    margin-bottom: 40px;
+  }
+
+  .hairTool {
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .imgWrapper {
+    width: 60%;
+  }
+  .aboutDescription {
+    margin-bottom: 115px;
+  }
+}
