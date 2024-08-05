@@ -104,7 +104,8 @@
   max-width: 230px;
   max-height: 229px;
 }
-.galleryTitle{
+
+.galleryTitle {
   font-size: 48px;
   line-height: 44px;
   text-align: center;
@@ -112,6 +113,7 @@
   margin-bottom: 60px;
 
 }
+
 .naiButtonWrapper {
   display: flex;
   justify-content: center;
@@ -202,7 +204,8 @@
   margin-top: 20px;
   align-items: center;
 }
-.naillItemText{
+
+.naillItemText {
   font-size: 20px;
 }
 
@@ -218,26 +221,15 @@
   transform: rotateY(180deg);
 }
 
-@media (max-width: 639px) {
-  .heroTitle {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (min-width: 640px) and (max-width: 767px) {
-  .heroTitle {
-    font-size: 32px;
-    line-height: 1.7;
-  }
-}
-
-@media (max-width: 767px) {
   .nailBg {
     padding: 120px 0px;
   }
 
+  .heroTitle {
+    font-size: 32px;
+    line-height: 1.7;
+  }
   .heroTitleWrapper {
     width: 300px;
   }
@@ -249,17 +241,20 @@
     line-height: 1.7;
   }
 
-  .nailList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .nailText {
     font-size: 18px;
   }
-  .naillItemText{
+
+  .naillItemText {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+    .nailList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nailWorkList {
@@ -269,6 +264,42 @@
   .nailWorkItem {
     object-fit: contain;
     flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+}
+
+@media (max-width: 639px) {
+  .nailBg {
+    padding: 100px 0px 60px 0px;
+  }
+
+  .heroTitle {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .heroTitleWrapper {
+    width: 150px;
+  }
+
+  .nailTitle,
+  .title,
+  .galleryTitle {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .nailText {
+    font-size: 16px;
+    text-align: start;
+  }
+
+  .naillItemText {
+    font-size: 14px;
+  }
+
+  .nailIcon{
+    margin-right: 12px;
   }
 }
 
@@ -294,6 +325,7 @@
   .nailWorkList {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .nailBlockBg {
     background-image: url('../../../../public/nails_bg_4.jpg');
     background-size: cover;
@@ -303,23 +335,28 @@
 }
 
 @media (max-width: 1023px) {
+
   .nailServices,
   .nailTitleBlock,
   .nailWorkBlock {
     padding: 60px 0px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
- .nailTitle,
+
+  .nailTitle,
   .title,
   .galleryTitle {
     font-size: 34px;
     line-height: 1.7;
   }
+
   .nailText {
     font-size: 20px;
   }
-  .naillItemText{
+
+  .naillItemText {
     font-size: 18px;
   }
 }
@@ -343,6 +380,7 @@
   .galleryTitle {
     font-size: 36px;
   }
+
   .nailText {
     font-size: 22px;
   }

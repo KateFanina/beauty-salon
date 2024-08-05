@@ -185,16 +185,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .bgWoman {
-    background-image: none;
-  }
-
-  .cosmetologyTitle {
-    text-align: center;
-  }
-}
-
 @media (max-width: 1023px) {
   .bgWoman,
   .browsSection {
@@ -227,11 +217,75 @@
   .browsShape {
     display: none;
   }
+
+  .browsImg {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 }
+
+@media (max-width: 767px) {
+  .bgWoman {
+    background-image: none;
+  }
+
+  .cleaningImg {
+    margin-bottom: 20px;
+  }
+
+  .cosmetologyTitle {
+    text-align: center;
+  }
+
+  .browsImgShape {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .cosmetologyTitle {
+    font-size: 28px;
+  }
+
+  .cosmetologyText {
+    text-align: start;
+  }
+
+  .iconWrapper {
+    width: 50px;
+    margin-right: 12px;
+    padding-top: 0;
+  }
+
+  .browsImg {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cleaningImg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .cosmetologyList {
     width: 70% !important;
+  }
+
+  .browsImgShape {
+    -webkit-animation: jump 7s linear infinite;
+    animation: jump 7s linear infinite;
+  }
+}
+
+@media (min-width: 1024px) {
+  .browsImg {
+    display: none;
   }
 }
 

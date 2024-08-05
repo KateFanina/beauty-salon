@@ -40,7 +40,7 @@ const Contacts = () => {
           <div className={styles.contactUs}>
           <h4 className={styles.contactUsTitle}>Зв&apos;яжіться з нами</h4>
             <div>
-              <Image src={smileWoman} alt='' />
+              <Image src={smileWoman} alt='smile-woman' />
             </div>
           </div>
         </div>

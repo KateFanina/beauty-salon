@@ -99,7 +99,6 @@
 @media (max-width: 639px) {
   .heroStyle {
     max-width: 300px;
-    text-align: end;
   }
 }
 
@@ -127,14 +126,17 @@
 
   .subtitle {
     font-size: 18px;
+    line-height: 1.4;
   }
 
   .heroTitle {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.5;
   }
 
   .heroText {
     font-size: 18px;
+    line-height: 1.5;
   }
 }
 

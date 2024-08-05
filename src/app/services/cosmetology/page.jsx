@@ -12,6 +12,8 @@ import IconLamination from '@components/icons/IconLamination';
 import rose from '@public/flower_rose_shape_1.jpg';
 import roses from '@public/flower_rose_shape_2.jpg';
 import woman from '@public/face_care_2.png';
+import cleaning from '@public/ultrasonic_cleaning.webp';
+import brows from '@public/photo_brows_1.png';
 import styles from './cosmetology.module.css';
 
 export const metadata = {
@@ -77,6 +79,9 @@ export default function CosmetologyPage() {
       <section className={styles.bgWoman}>
         <div className='container'>
           <div>
+            <div className={styles.cleaningImg}>
+              <Image src={cleaning} alt='ultrasonic-face-cleaning' />
+            </div>
             <h2 className={styles.cosmetologyTitle}>Ультразвукова чистка обличчя</h2>
             <ul className={styles.cosmetologyList}>
               {cosmetologyDatas.map((cosmetologyData) => (
@@ -97,6 +102,9 @@ export default function CosmetologyPage() {
       </section>
       <section className={styles.browsSection}>
         <div className='container'>
+          <div className={styles.browsImg}>
+            <Image src={brows} alt='brows-and-eyelashes' />
+          </div>
           <h2 className={styles.browsTitle}>Догляд за віями та бровами</h2>
           <div className={styles.browsBlock}>
             <ul className={styles.browsList}>

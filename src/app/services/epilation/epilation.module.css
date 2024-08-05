@@ -167,36 +167,47 @@
     transform: translateY(0);
   }
 }
-@media (max-width: 767px) {
-  .epilationItem{
-    margin-bottom: 20px;
-  }
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
   .epilationText {
     font-size: 18px;
     color: #0d0d0d;
   }
-  .epilationSubtitle{
+
+  .epilationDesc {
+    font-size: 16px;
+  }
+
+  .epilationSubtitle {
     font-size: 22px;
     margin-bottom: 10px;
     line-height: 1.7;
     text-align: center;
   }
-  .epilationDesc{
-    font-size: 16px;
-  }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .epilationText {
     font-size: 20px;
     color: #0d0d0d;
   }
 }
+
+@media (min-width: 1024px) {
+  .bodyCareImg {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1279px) {
+  .sugaringImg {
+    display: none;
+  }
+}
+
 @media (max-width: 1023px) {
   .epilationSection {
-    background-image: url('../../../../public/wax_img_2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     background-color: #ffffff;
   }
 
@@ -206,12 +217,23 @@
     padding: 60px 0px;
   }
 
+  .waxBlock,
+  .sugaringBlock {
+    display: block;
+  }
+
+  .bodyCareImg {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .epilationTitle {
     font-size: 32px;
     line-height: 1.4;
   }
-  
-  .epilationDesc{
+
+  .epilationDesc {
     font-size: 18px;
   }
 
@@ -228,25 +250,50 @@
     width: 100% !important;
   }
 
-  .sugaringSection {
-    background-image: url('../../../../public/sugaring_image.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+}
+
+@media (max-width: 767px) {
+  .epilationItem {
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 1279px) {
-  .sugaringImg {
-    display: none;
+@media (max-width: 639px) {
+  .epilationTitle {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .epilationText {
+    font-size: 16px;
+    color: #0d0d0d;
+  }
+
+  .iconWrapper {
+    align-items: baseline;
+    margin-right: 12px;
+    width: 40px;
+  }
+
+  .epilationSubtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    text-align: start;
+  }
+
+  .epilationDesc {
+    font-size: 16px;
+    text-align: start;
   }
 }
+
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .epilationList {
     width: 90% !important;
   }
+
   .epilationText {
     font-size: 20px;
   }

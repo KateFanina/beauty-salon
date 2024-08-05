@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import hairNadya from '@public/nadya.jpg';
+import hairNadya from '@public/nadiya.jpg';
 import styles from './Team.module.css';
 
 export default function Team() {
@@ -8,7 +8,7 @@ export default function Team() {
       <div className='container'>
         <div className={styles.teamContainer}>
           <div className={styles.myPhoto}>
-            <Image src={hairNadya} alt='' />
+            <Image src={hairNadya} alt='beautiful-girl-photo' />
           </div>
           <div className={styles.teamText}>
             <p>

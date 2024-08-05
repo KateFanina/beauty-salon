@@ -4,11 +4,14 @@ import IconLotusTwo from '@components/icons/IconLotusTwo';
 import IconFlower from '@components/icons/IconFlower';
 import IconSacura from '@components/icons/IconSacura';
 import IconSacuraTwo from '@components/icons/IconSacuraTwo';
+import hairBg from '@public/about_us_bg.jpg';
+import Image from 'next/image';
 import styles from './about.module.css';
 
 export const metadata = {
   title: 'Про нас',
-  description: 'Наш салон краси надає своїм клієнтам професійні послуги, де ціна відповідає якості.',
+  description:
+    'Наш салон краси надає своїм клієнтам професійні послуги, де ціна відповідає якості.',
 };
 
 const AboutPage = () => {
@@ -53,6 +56,9 @@ const AboutPage = () => {
   return (
     <section className={styles.aboutUs}>
       <div className='container'>
+        <div className={styles.aboutUshairBg}>
+          <Image src={hairBg} alt='beauty-woman' />
+        </div>
         <ul className={styles.aboutUsList}>
           {aboutDatas.map((aboutData) => (
             <li className={styles.aboutUsItem} key={aboutData.id}>

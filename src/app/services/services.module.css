@@ -8,6 +8,7 @@
 .haircutSection {
   display: flex;
 }
+
 .wrap {
   width: 50%;
   padding: 100px 30px;
@@ -133,6 +134,8 @@
 
 .shape {
   position: absolute;
+  bottom: 2%;
+  right: 7%;
   -webkit-animation: slidein 7s linear infinite;
   animation: slidein 7s linear infinite;
 }
@@ -161,7 +164,54 @@
   margin-bottom: 30px;
 }
 
+.cosmeticSection {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0px;
+}
+
+.cosmeticBlock {
+  display: flex;
+}
+
+.cosmeticText {
+  width: 50%;
+  padding: 0px 30px;
+}
+
+.flowerShape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+
+  .haircutTitle,
+  .haircutTitleOne {
+    font-size: 34px;
+    line-height: 1.7;
+  }
+
+  .haircutText,
+  .nailTitle {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .wrap,
+  .nailBlock,
+  .waxingText,
+  .cosmeticSection {
+    padding: 80px 0px;
+  }
+  .wrapImg{
+    height: 100%;
+  }
+
   .haircutTitle,
   .haircutTitleOne {
     font-size: 36px;
@@ -190,51 +240,14 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .shape {
-    bottom: 0;
-    right: 10%;
-  }
-}
-
-@media (min-width: 1536px) {
-  .haircutTitleOne {
-    display: none;
-  }
-}
-
-.cosmeticSection {
-  background-color: #ffffff;
-  position: relative;
-  z-index: 1;
-  padding: 100px 0px;
-}
-
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .wrap,
   .nailBlock,
   .waxingText,
   .cosmeticSection {
     padding: 60px 0px;
   }
-}
 
-.cosmeticBlock {
-  display: flex;
-}
-
-.cosmeticText {
-  width: 50%;
-  padding: 0px 30px;
-}
-
-.flowerShape {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-@media (max-width: 1023px) {
   .wrap,
   .nailTitleBlock,
   .waxingText,
@@ -249,20 +262,9 @@
   .leaves,
   .waxingImg,
   .waxingShape,
-  .flowerShape {
+  .flowerShape,
+  .shape {
     display: none;
-  }
-
-  .haircutTitle,
-  .haircutTitleOne {
-    font-size: 34px;
-    line-height: 1.7;
-  }
-
-  .haircutText,
-  .nailTitle {
-    font-size: 20px;
-    line-height: 1.7;
   }
 
   .bgHair {
@@ -295,5 +297,21 @@
     background-size: cover;
     background-position: center center;
     background-color: #f9f3f0;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .haircutTitle,
+  .haircutTitleOne {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .haircutText,
+  .nailTitle {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
   }
 }

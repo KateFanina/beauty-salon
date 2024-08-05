@@ -132,50 +132,11 @@
   }
 }
 
-@media (max-width: 639px) {
-  .hairTool {
-    bottom: 55%;
-    left: 1%;
-    z-index: -1;
-  }
-}
-
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .hairTool {
     bottom: 55%;
     left: 5%;
     z-index: -1;
-  }
-}
-
-@media (max-width: 767px) {
-  .aboutHairWrapper {
-    display: none;
-  }
-
-  .flowerImg {
-    display: none;
-  }
-
-  .imgWrapperTwo {
-    z-index: 1;
-  }
-
-  .aboutHaircut {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .aboutDescription {
-    font-size: 18px;
-    line-height: 1.65;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .hairTool {
-    bottom: -15%;
-    left: 30%;
   }
 }
 
@@ -211,7 +172,53 @@
   }
 
   .aboutDescription {
+    font-size: 18px;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutHairWrapper {
+    display: none;
+  }
+
+  .flowerImg {
+    display: none;
+  }
+
+  .imgWrapperTwo {
+    z-index: 1;
+  }
+
+  .about {
+    font-size: 24px;
+    line-height: 1.65;
+  }
+
+  .aboutHaircut {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  .hairTool {
+    bottom: 55%;
+    left: 1%;
+    z-index: -1;
+  }
+  
+  .aboutDescription {
+    font-size: 16px;
+    line-height: 1.65;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hairTool {
+    bottom: -15%;
+    left: 30%;
   }
 }
 
@@ -256,6 +263,7 @@
   .imgWrapper {
     width: 60%;
   }
+
   .aboutDescription {
     margin-bottom: 115px;
   }

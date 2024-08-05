@@ -12,12 +12,12 @@ const Footer = () => {
               <ul className={styles.adressList}>
                 <li className={styles.adressItem}>
                   <CiLocationOn />
-                  <p>м. Lorem, вул. 40-річчя Перемоги, 1</p>
+                  <p className={styles.adressText}> м. Сміла, вул. 40-річчя Перемоги, 6</p>
                 </li>
                 <li className={styles.adressItem}>
                   <CiPhone />
-                  <a className={styles.media} href='tel:+380991111111'>
-                    +38 000 111 11 11
+                  <a className={styles.media} href='tel:+380631736533'>
+                    +380631736533
                   </a>
                 </li>
                 <li className={styles.adressItem}>

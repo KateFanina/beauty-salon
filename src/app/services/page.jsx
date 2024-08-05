@@ -36,7 +36,7 @@ export default function Services() {
                 <MainButton label='Докладніше' path='/services/hairdressing' />
               </div>
               <div className={styles.wrapImg}>
-                <Image className={styles.womanImg} src={haircut} alt=' ' />
+                <Image className={styles.womanImg} src={haircut} alt='coloring-hair' />
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Services() {
           </div>
           <div className={styles.nailBlock}>
             <div className={styles.nailImageWrap}>
-              <Image src={nailImg} className={styles.nailImage} />
+              <Image src={nailImg} alt='woman-with-manicure' className={styles.nailImage} />
             </div>
             <div className={styles.nailTitleBlock}>
               <h2 className={styles.haircutTitle}>Нігтьові послуги</h2>
@@ -78,7 +78,7 @@ export default function Services() {
               <MainButton label='Докладніше' path={'/services/epilation'} />
             </div>
             <div className={styles.waxingImg}>
-              <Image src={waxingGirl} />
+              <Image src={waxingGirl} alt='body-care'/>
             </div>
           </div>
           <div className={styles.waxingShape}>
@@ -94,7 +94,7 @@ export default function Services() {
           <h2 className={styles.haircutTitleOne}> Косметологічні послуги </h2>
           <div className={styles.cosmeticBlock}>
             <div className={styles.waxingImg}>
-              <Image src={cleaning} />
+              <Image src={cleaning} alt="ultrasonic-face-cleaning"/>
             </div>
             <div className={styles.cosmeticText}>
               <h2 className={styles.haircutTitleTwo}> Косметологічні послуги </h2>

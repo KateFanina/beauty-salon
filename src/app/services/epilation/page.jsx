@@ -9,6 +9,7 @@ import beauty from '@public/beauty_woman.png';
 import flowersShape from '@public/flower_shape_4.png';
 import girl from '@public/body_care.png';
 import epilation from '@public/skin_care.webp';
+import bodyCare from '@public/body_care_2.webp';
 import flowerShape from '@public/flower_shape_5.png';
 
 export const metadata = {
@@ -59,6 +60,9 @@ export default function EpilationPage() {
       <section className={styles.epilationSection}>
         <div className='container'>
           <div className={styles.waxBlock}>
+            <div className={styles.bodyCareImg}>
+              <Image src={epilation} alt='skin-care' />
+            </div>
             <div className={styles.wax}>
               <h2 className={styles.epilationTitle}>Воскова депіляція</h2>
               {waxDatas.map((waxData, idx) => (
@@ -68,7 +72,7 @@ export default function EpilationPage() {
               ))}
             </div>
             <div className={styles.waxImg}>
-              <Image src={epilation} alt='' />
+              <Image src={epilation} alt='skin-care' />
             </div>
           </div>
           <div className={styles.shape}>
@@ -81,6 +85,9 @@ export default function EpilationPage() {
           <div className={styles.sugaringBlock}>
             <div className={styles.beautyImg}>
               <Image src={beauty} alt='' />
+            </div>
+            <div className={styles.bodyCareImg}>
+              <Image src={bodyCare} alt='' />
             </div>
             <div className={styles.waxText}>
               <h2 className={styles.epilationTitle}>Шугаринг</h2>
