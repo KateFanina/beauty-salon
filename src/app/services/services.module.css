@@ -125,7 +125,7 @@
   width: 50%;
 }
 
-.waxingShape {
+.flowersShape {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,72 +201,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .wrap,
-  .nailBlock,
-  .waxingText,
-  .cosmeticSection {
-    padding: 80px 0px;
-  }
-  .wrapImg{
-    height: 100%;
-  }
-
-  .haircutTitle,
-  .haircutTitleOne {
-    font-size: 36px;
-    line-height: 1.3;
-  }
-
-  .haircutTitleTwo {
-    display: none;
-  }
-
-  .haircutText,
-  .nailTitle {
-    font-size: 20px;
-    line-height: 1.7;
-  }
-
-  .shape {
-    bottom: 10%;
-    right: 5%;
-  }
-}
-
-@media (max-width: 1535px) {
-  .haircutTitleTwo {
-    display: none;
-  }
-}
-
-@media (max-width: 1023px) {
-  .wrap,
-  .nailBlock,
-  .waxingText,
-  .cosmeticSection {
-    padding: 60px 0px;
-  }
-
-  .wrap,
-  .nailTitleBlock,
-  .waxingText,
-  .cosmeticText {
-    width: 100% !important;
-    padding-left: 0;
-  }
-
-  .wrapImg,
-  .leafImg,
-  .nailImageWrap,
-  .leaves,
-  .waxingImg,
-  .waxingShape,
-  .flowerShape,
-  .shape {
-    display: none;
-  }
-
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .bgHair {
     background-image: url('../../../public/girl_card.png');
     background-repeat: no-repeat;
@@ -300,6 +235,104 @@
   }
 }
 
+@media (min-width: 768px) {
+  .serviceImages {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+  .wrap,
+  .nailBlock,
+  .waxingText,
+  .cosmeticSection {
+    padding: 80px 0px;
+  }
+
+  .wrapImg {
+    height: 100%;
+  }
+
+  .haircutTitle,
+  .haircutTitleOne {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .haircutTitleTwo {
+    display: none;
+  }
+
+  .haircutText,
+  .nailTitle {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .shape {
+    bottom: 10%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1535px) {
+  .haircutTitleTwo {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .wrap,
+  .nailBlock,
+  .waxingText,
+  .cosmeticSection {
+    padding: 60px 0px;
+  }
+
+  .wrap,
+  .nailTitleBlock,
+  .waxingText,
+  .cosmeticText {
+    width: 100% !important;
+    padding-left: 0;
+  }
+
+  .wrapImg,
+  .leafImg,
+  .nailImageWrap,
+  .leaves,
+  .waxingImg,
+  .flowersShape,
+  .flowerShape,
+  .shape {
+    display: none;
+  }
+
+  .bgHair,
+  .waxingSection {
+    background-color: #ffffff;
+  }
+
+  .nailSection,
+  .cosmeticSection {
+    background-color: #f9f3f0;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .haircutSection,
+  .nailBlock {
+    display: block;
+  }
+
+  .serviceImages {
+    padding-bottom: 30px;
+  }
+}
+
 @media (max-width: 639px) {
 
   .haircutTitle,
@@ -312,6 +345,7 @@
   .nailTitle {
     font-size: 18px;
     line-height: 1.7;
-    text-align: center;
+    text-align: start;
   }
+
 }

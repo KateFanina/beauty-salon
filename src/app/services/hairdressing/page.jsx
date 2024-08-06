@@ -12,6 +12,7 @@ import shapeFlower from '@public/flower_shape_4.png';
 import dyed_hair from '@public/dyed_hair.jpg';
 import styles from './hairdressing.module.css';
 
+
 export const metadata = {
   title: 'Стрижки та фарбування волосся у м.Сміла',
   description:

@@ -11,6 +11,9 @@ import girl from '@public/body_care.png';
 import epilation from '@public/skin_care.webp';
 import bodyCare from '@public/body_care_2.webp';
 import flowerShape from '@public/flower_shape_5.png';
+import smallFlowerShape from '@public/flower_shape_7.png';
+import bigFlowerShape from '@public/flower_shape_8.png';
+import flower from '@public/flower_shape_6.png';
 
 export const metadata = {
   title: 'Шугаринг, воскова епіляція у м.Сміла',
@@ -60,6 +63,15 @@ export default function EpilationPage() {
       <section className={styles.epilationSection}>
         <div className='container'>
           <div className={styles.waxBlock}>
+          <div className={styles.smallFlower}>
+            <Image src={smallFlowerShape} alt='flower-shape' />
+          </div>
+          <div className={styles.bigFlower}>
+            <Image src={bigFlowerShape} alt='flower-shape' />
+          </div>
+          <div className={styles.smallerFlower}>
+            <Image src={smallFlowerShape} alt='flower-shape' />
+          </div>
             <div className={styles.bodyCareImg}>
               <Image src={epilation} alt='skin-care' />
             </div>
@@ -83,6 +95,9 @@ export default function EpilationPage() {
       <section className={styles.sugaringSection}>
         <div className='container'>
           <div className={styles.sugaringBlock}>
+          <div className={styles.flowersShapeBg}>
+            <Image src={flower} alt='' />
+          </div>
             <div className={styles.beautyImg}>
               <Image src={beauty} alt='' />
             </div>

@@ -10,14 +10,18 @@ import waxingGirl from '@public/skin_care_2.png';
 import haircut from '@public/hairstyle.png';
 import leaf_shape_1 from '@public/leaf_shape_1.png';
 import leaves from '@public/leaf_shape_2.png';
+import haircutImg from '@public/haircut.jpeg';
+import manicureImg from '@public/service_manicure.jpg';
+import brows from '@public/eyebrow.jpg';
+import girl from '@public/body_care.png';
 
 export const metadata = {
   title: 'Наші послуги',
-  description: 'перукарські послуги, нігті, нігтьові послуги,манікюр, педикюр, епіляція, шугаринг, косметологічні послуги, ламінування, вій, брів',
+  description:
+    'перукарські послуги, нігті, нігтьові послуги,манікюр, педикюр, епіляція, шугаринг, косметологічні послуги, ламінування, вій, брів',
 };
 
 export default function Services() {
-
   return (
     <main>
       <section>
@@ -25,6 +29,9 @@ export default function Services() {
           <div className='container'>
             <div div className={styles.haircutSection}>
               <div className={styles.wrap}>
+                <div className={styles.serviceImages}>
+                  <Image src={haircutImg} alt='haircut' />
+                </div>
                 <div className={styles.hairTitle}>
                   <h2 className={styles.haircutTitle}>Перукарські Послуги</h2>
                   <p className={styles.haircutText}>
@@ -51,6 +58,9 @@ export default function Services() {
             <Image src={leaves} alt='shape' />
           </div>
           <div className={styles.nailBlock}>
+            <div className={styles.serviceImages}>
+              <Image src={manicureImg} alt='manicure' />
+            </div>
             <div className={styles.nailImageWrap}>
               <Image src={nailImg} alt='woman-with-manicure' className={styles.nailImage} />
             </div>
@@ -69,6 +79,9 @@ export default function Services() {
         <div className='container'>
           <div className={styles.waxingBlock}>
             <div className={styles.waxingText}>
+            <div className={styles.serviceImages}>
+              <Image src={girl} alt='body-care' />
+            </div>
               <h2 className={styles.haircutTitle}> Послуги епіляції</h2>
               <p className={styles.nailTitle}>
                 Забудьте про непотрібне волосся з нашими професійними послугами шугарингу та
@@ -78,10 +91,10 @@ export default function Services() {
               <MainButton label='Докладніше' path={'/services/epilation'} />
             </div>
             <div className={styles.waxingImg}>
-              <Image src={waxingGirl} alt='body-care'/>
+              <Image src={waxingGirl} alt='body-care' />
             </div>
           </div>
-          <div className={styles.waxingShape}>
+          <div className={styles.flowersShape}>
             <Image src={flower} alt='' />
           </div>
           <div className={styles.shape}>
@@ -91,10 +104,13 @@ export default function Services() {
       </section>
       <section className={styles.cosmeticSection}>
         <div className='container'>
+        <div className={styles.serviceImages}>
+              <Image src={brows} alt='brows' />
+            </div>
           <h2 className={styles.haircutTitleOne}> Косметологічні послуги </h2>
           <div className={styles.cosmeticBlock}>
             <div className={styles.waxingImg}>
-              <Image src={cleaning} alt="ultrasonic-face-cleaning"/>
+              <Image src={cleaning} alt='ultrasonic-face-cleaning' />
             </div>
             <div className={styles.cosmeticText}>
               <h2 className={styles.haircutTitleTwo}> Косметологічні послуги </h2>
