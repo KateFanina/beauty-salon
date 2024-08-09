@@ -18,7 +18,8 @@
   line-height: 1.9;
   text-transform: uppercase;
   font-weight: 600;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: var(--white-color);
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {

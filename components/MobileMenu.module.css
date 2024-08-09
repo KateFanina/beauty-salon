@@ -1,18 +1,19 @@
 .mobileMenuWrapper {
   width: 100%;
   max-width: 320px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   height: 100%;
   position: relative;
   transition: all ease 1s;
   z-index: 1;
+  border-right: 3px solid var(--primary-color);
 }
 .mobileLogo {
   padding-bottom: 20px;
   padding-top: 20px;
   display: block;
   text-align: center;
-  background-color: #c28565;
+  background-color: var(--primary-color);
 }
 .logo {
   width: 30%;

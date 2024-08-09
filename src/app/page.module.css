@@ -15,7 +15,7 @@
   line-height: 84px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 20px;
 }
 
@@ -23,7 +23,7 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 34px;
-  color: #c28565;
+  color: var(--primary-color);
   margin-bottom: 8px;
 }
 
@@ -36,7 +36,7 @@
   font-size: 22px;
   font-weight: 300;
   line-height: 28px;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 30px;
 }
 
@@ -50,8 +50,8 @@
   border: none;
   text-transform: uppercase;
   text-align: center;
-  background-color: #c28565;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -62,7 +62,7 @@
 
 .caption,
 .iconWrapper {
-  color: #ffffff;
+  color: var(--white-color);
   z-index: 5;
 }
 
@@ -80,13 +80,13 @@
 
 .heroBtn:before {
   transform: scaleY(0);
-  background: #0d0d0d;
-  color: #ffffff;
+  background-color: var(--title-color);
+  color: var(--white-color);
 }
 
 .heroBtn:after {
-  background: #0d0d0d;
-  color: #ffffff;
+  background-color: var(--title-color);
+  color: var(--white-color);
   transform: scaleX(0);
 }
 

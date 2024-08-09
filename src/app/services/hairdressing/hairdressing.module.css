@@ -21,14 +21,13 @@
 
 .hairTitle {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  transition: all 0.4s ease-in-out;
 }
 
 .haircutTitle {
-  color: #0d0d0d;
+  color: var(--title-color);
   font-size: 34px;
   line-height: 44px;
   text-transform: capitalize;
@@ -40,8 +39,8 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
-  fill: #c28565;
-  transition: all 0.4s ease-in-out;
+  fill: var(--primary-color);
+  transition: var(--timing-duration);
 }
 
 .haircutItem:last-child {
@@ -56,7 +55,7 @@
   border-radius: 50%;
   align-items: center;
   background-color: #f2e3dc;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .haircutItem:hover .iconWrapper {
@@ -74,8 +73,8 @@
   background-position: center center;
   position: relative;
   padding: 100px 0px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: var(--timing-duration);
+  transition: var(--timing-duration);
   z-index: 2;
 }
 
@@ -91,8 +90,9 @@
 }
 
 .dyeingIcon {
-  fill: #c28565;
+  fill: var(--primary-color);
   margin-right: 8px;
+  transition: var(--timing-duration);
 }
 
 .hairTitle:hover .dyeingIcon {
@@ -101,11 +101,11 @@
 
 .hairItem {
   display: flex;
-  fill: #c28565;
+  fill: var(--primary-color);
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .hairItem:hover .iconHairWrapper {
@@ -120,7 +120,7 @@
   border-radius: 50%;
   align-items: center;
   background-color: #f2e3dc;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .hairItem:last-child {
@@ -138,8 +138,8 @@
 }
 
 .shapeFlower {
-  -webkit-animation: slidein 7s linear infinite;
-  animation: slidein 7s linear infinite;
+  -webkit-animation: slidein var(--animation-duration);
+  animation: slidein var(--animation-duration);
 }
 
 @keyframes slidein {
@@ -158,10 +158,8 @@
 
 @media (max-width: 1023px) {
   .bgHair {
-    background-color: #ffffff;
-    background-image: url('../../../../public/haircut_image.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--white-color);
+    background-image: none;
   }
 
   .hairCutBlock,
@@ -169,17 +167,38 @@
     padding: 60px 12px;
     width: 100%;
   }
+  
+  .hairImg {
+    margin-bottom: 30px;
+  }
 
-  /* .hairTitle {
-    justify-content: start;
-  } */
+  .imageWrapper {
+    margin-bottom: 30px;
+  }
+  .imageWrapper img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hairSubTitle {
+    padding-bottom: 16px;
+    color: var(--primary-color);
+  }
+
+  .hairText {
+    text-align: center;
+  }
 
   .hairStyleImg,
-  .shapeFlower {
+  .shapeFlower,
+  .iconWrapper {
     display: none;
   }
 
-  .haircutItem,
+  .haircutItem {
+    display: block;
+  }
+
   .hairItem {
     margin-bottom: 5px;
   }
@@ -191,25 +210,24 @@
     line-height: 1.5;
   }
 
-  .hairTitle {
-    align-items: flex-start;
-  }
-
   .hairText {
-    font-size: 14px;
+    font-size: 19px;
+    text-align: start;
   }
 
-  .iconWrapper,
   .iconHairWrapper {
     width: 60px;
     height: 60px;
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  .hairText {
-    font-size: 22px;
+@media (min-width: 1024px) {
+
+  .imageWrapper,
+  .hairImg {
+    display: none;
   }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -223,6 +241,7 @@
     right: 20%;
   }
 }
+
 
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .shapeFlower {

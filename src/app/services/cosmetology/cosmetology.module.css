@@ -8,7 +8,7 @@
 }
 
 .cosmetologyTitle {
-  color: #0d0d0d;
+  color: var(--title-color);
   font-size: 48px;
   margin-bottom: 30px;
 }
@@ -28,7 +28,7 @@
 }
 
 .cosmetologySubTitle {
-  color: #0d0d0d;
+  color: var(--title-color);
   font-size: 24px;
   line-height: 1.417;
   margin-bottom: 8px;
@@ -36,17 +36,17 @@
 
 .cosmetologyText {
   font-size: 18px;
-  color: #6e6e6e;
+  color: var(--primary-text-color);
   text-align: justify;
 }
 
 .iconWrapper {
-  fill: #c28565;
+  fill: var(--primary-color);
   display: flex;
   align-items: flex-start;
   padding-top: 12px;
   margin-right: 20px;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .cosmetologyItem:hover .iconWrapper {
@@ -58,8 +58,8 @@
   bottom: -17%;
   right: 10%;
   z-index: 2;
-  animation: slidein 7s linear infinite;
-  -webkit-animation: slidein 7s linear infinite;
+  -webkit-animation: slidein var(--animation-duration);
+  animation: slidein var(--animation-duration);
 }
 
 @keyframes slidein {
@@ -77,7 +77,7 @@
 }
 
 .browsSection {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   padding-top: 120px;
   position: relative;
   z-index: 1;
@@ -95,7 +95,7 @@
 }
 
 .browsTitle {
-  color: #0d0d0d;
+  color: var(--title-color);
   font-size: 48px;
   text-align: center;
   margin-bottom: 30px;
@@ -115,11 +115,11 @@
 }
 
 .browsIcon {
-  fill: #c28565;
+  fill: var(--primary-color);
   display: flex;
   align-items: flex-start;
   margin-right: 20px;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .browsItem {
@@ -167,8 +167,8 @@
   bottom: 0;
   left: 5%;
   z-index: 2;
-  animation: slidein 7s linear infinite;
-  -webkit-animation: slidein 7s linear infinite;
+  -webkit-animation: slidein var(--animation-duration);
+  animation: slidein var(--animation-duration);
 }
 
 @keyframes slidein {
@@ -278,8 +278,8 @@
   }
 
   .browsImgShape {
-    -webkit-animation: jump 7s linear infinite;
-    animation: jump 7s linear infinite;
+    -webkit-animation: jump var(--animation-duration);
+    animation: jump var(--animation-duration);
   }
 }
 

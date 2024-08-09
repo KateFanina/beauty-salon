@@ -31,7 +31,7 @@
   line-height: 1.2;
   text-transform: capitalize;
   text-align: center;
-  color: #c28565;
+  color: var(--primary-color);
   margin-bottom: 30px;
 }
 
@@ -39,7 +39,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 38px;
-  color: #0d0d0d;
+  color: var(--title-color);;
   text-align: justify;
 }
 
@@ -48,8 +48,8 @@
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-animation: jump 7s linear infinite;
-  animation: jump 7s linear infinite;
+  -webkit-animation: jump var(--animation-duration);
+  animation: jump var(--animation-duration);
 }
 
 .leafImg {
@@ -57,7 +57,8 @@
   z-index: -1;
   bottom: 10%;
   right: 0;
-  animation: jump 7s linear infinite;
+  -webkit-animation: jump var(--animation-duration);
+  animation: jump var(--animation-duration);
 }
 
 @keyframes jump {
@@ -75,7 +76,7 @@
 }
 
 .nailSection {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   position: relative;
   z-index: 1;
 }
@@ -103,7 +104,7 @@
   font-weight: 300;
   line-height: 38px;
   text-align: justify;
-  color: #0d0d0d;
+  color: var(--title-color);;
   margin-bottom: 60px;
 }
 
@@ -136,8 +137,8 @@
   position: absolute;
   bottom: 2%;
   right: 7%;
-  -webkit-animation: slidein 7s linear infinite;
-  animation: slidein 7s linear infinite;
+  -webkit-animation: slidein var(--animation-duration);
+  animation: slidein var(--animation-duration);
 }
 
 @keyframes slidein {
@@ -160,12 +161,12 @@
   line-height: 1.2;
   text-transform: capitalize;
   text-align: center;
-  color: #c28565;
+  color: var(--primary-color);
   margin-bottom: 30px;
 }
 
 .cosmeticSection {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   position: relative;
   z-index: 1;
   padding: 100px 0px;
@@ -207,7 +208,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
 
   .nailSection {
@@ -215,7 +216,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #f9f3f0;
+    background-color: var(--primary-bg-color);
   }
 
   .waxingSection {
@@ -223,7 +224,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
 
   .cosmeticSection {
@@ -231,7 +232,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #f9f3f0;
+    background-color: var(--primary-bg-color);
   }
 }
 
@@ -312,12 +313,12 @@
 
   .bgHair,
   .waxingSection {
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
 
   .nailSection,
   .cosmeticSection {
-    background-color: #f9f3f0;
+    background-color: var(--primary-bg-color);
   }
 }
 

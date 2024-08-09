@@ -13,17 +13,15 @@
 
   /* timig*/
   --animation-duration: 7s linear infinite;
-  --timing-duration:all 250ms ease-in-out;
-  /* transition-timing-function */
-
+  --timing-duration:all 400ms ease-in-out;
 }
 
 body {
-  color: #2e2e2e;
+  color: var(--secondary-text-color);
   font-family: 'Balsamiq Sans', cursive;
   font-weight: 400;
   background-size: 200px;
-  background-color: #f9f3f0;
+  background-color: var(--primary-bg-color);
   min-height: 100vh;
 }
 
@@ -37,49 +35,52 @@ body {
 li {
   list-style: none;
 }
+img{
+  border-radius: 10px;
+}
 
 a {
   text-decoration: none;
   transition: all ease 0.4s;
 }
 a:hover {
-  color: #c28565;
+  color: var(--primary-color);
 }
 
 header svg {
-  color: #c28565;
+  color: var(--primary-color);
   width: 46px;
   height: 46px;
   line-height: 46px;
-  border: 1px solid #c28565;
+  border: 1px solid var(--primary-color);
   border-radius: 50%;
   text-align: center;
   font-size: 22px;
   font-weight: 300;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: var(--timing-duration);
+  transition: var(--timing-duration);
   padding: 6px;
 }
 header svg:hover {
-  background-color: #c28565;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 footer svg {
-  background-color: #c28565;
+  background-color: var(--primary-color);
   width: 32px;
   height: 32px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white-color);
   border-radius: 50%;
   text-align: center;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: var(--timing-duration);
+  transition: var(--timing-duration);
   padding: 6px;
 }
 footer svg:hover {
-  background-color: #f9f3f0;
-  color: #c28565;
-  border: 1px solid #c28565;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 nav {
@@ -88,7 +89,7 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: var(--white-color);
   padding: 20px 0px;
 }
 

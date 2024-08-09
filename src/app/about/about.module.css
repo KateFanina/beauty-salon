@@ -17,13 +17,13 @@
 .aboutTitleWrapper {
   display: flex;
   align-items: center;
-  fill: #c28565;
+  fill: var(--primary-color);
   margin-bottom: 8px;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .aboutIconWrapper {
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .aboutUsItem:hover .aboutIconWrapper {
@@ -32,7 +32,7 @@
 
 .aboutUsTitle {
   font-size: 24px;
-  color: #0d0d0d;
+  color: var(--title-color);
   text-transform: uppercase;
   text-align: center;
   margin-left: 8px;
@@ -41,13 +41,13 @@
 .aboutUsText {
   font-size: 18px;
   line-height: 1.75;
-  color: #6e6e6e;
+  color: var(--primary-text-color);
   text-align: justify;
 }
 
 .aboutUsItem {
   margin-bottom: 20px;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 @media (max-width: 1023px) {

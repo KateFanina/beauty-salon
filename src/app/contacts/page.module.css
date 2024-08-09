@@ -19,14 +19,14 @@
 }
 
 .contactUsTitle {
-  color: #c28565;
+  color: var(--primary-color);
   font-size: 48px;
   line-height: 1.25;
   text-align: center;
 }
 
 .information {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .infoBlock {
@@ -47,11 +47,11 @@
 
 .infoContainer {
   padding: 30px;
-  background: #f9f3f0;
+  background-color: var(--primary-bg-color);
 }
 
 .infoTitle {
-  color: #0d0d0d;
+  color: var(--title-color);
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -59,7 +59,7 @@
 }
 
 .infoItem {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   padding: 30px;
   display: flex;
   gap: 25px;
@@ -78,12 +78,12 @@
   justify-content: center;
   width: 70px;
   height: 70px;
-  background-color: #c28565;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   text-align: center;
   font-size: 35px;
   position: relative;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .infoItem:hover .infoIcon {
@@ -91,7 +91,7 @@
 }
 
 .infoItemTitle {
-  color: #0d0d0d;
+  color: var(--title-color);;
   font-size: 24px;
   line-height: 1.417;
   font-weight: 700;
@@ -99,8 +99,7 @@
 }
 
 .infoItemText {
-  color: #6e6e6e;
-
+  color: var(--primary-text-color);
 }
 
 .infoPhotoSalon {

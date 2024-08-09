@@ -6,8 +6,8 @@
 }
 
 .navigationItem .active {
-  color: #c28565;
-  border-bottom: 2px solid #ffffff;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--white-color);
 }
 
 .navItem {
@@ -16,8 +16,8 @@
 }
 
 .navigation {
-  background: #0d0d0d;
-  color: #ffffff;
+  background-color: var(--title-color);
+  color: var(--white-color);
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
 }
@@ -51,7 +51,7 @@
   padding-bottom: 15px;
 }
 .logoBg {
-  background-color: #c28565;
+  background-color: var(--primary-color);
   position: absolute;
   top: 0%;
   left: 0;

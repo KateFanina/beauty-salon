@@ -9,7 +9,7 @@
 }
 
 .adressList {
-  color: #ffffff;
+  color: var(--white-color);
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -23,7 +23,7 @@
 }
 
 .media {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 @media (max-width: 767px) {

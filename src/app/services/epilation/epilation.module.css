@@ -1,7 +1,7 @@
 .epilationSection,
 .epilationsSection {
   padding: 100px 0px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   position: relative;
   z-index: 1;
 }
@@ -20,14 +20,15 @@
 }
 
 .epilationTitle {
-  color: #000000;
+  /* color: #000000; */
+  color: var(--primary-color);
   font-size: 36px;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .epilationText {
-  color: #6e6e6e;
+  color: var(--primary-text-color);
   font-size: 24px;
   line-height: 1.8;
   text-align: center;
@@ -81,11 +82,11 @@
 }
 
 .iconWrapper {
-  fill: #c28565;
+  fill: var(--primary-color);
   display: flex;
   align-items: center;
   margin-right: 20px;
-  transition: all 0.4s ease-in-out;
+  transition: var(--timing-duration);
 }
 
 .epilationItem:hover .iconWrapper {
@@ -93,14 +94,14 @@
 }
 
 .epilationSubtitle {
-  color: #0d0d0d;
+  color: var(--title-color);;
   font-size: 24px;
   line-height: 1.4;
   margin-bottom: 20px;
 }
 
 .epilationDesc {
-  color: #6e6e6e;
+  color: var(--primary-text-color);
   font-size: 20px;
   line-height: 1.7;
   text-align: justify;
@@ -143,8 +144,8 @@
 }
 
 .shape {
-  -webkit-animation: slidein 7s linear infinite;
-  animation: slidein 7s linear infinite;
+  -webkit-animation: slidein var(--animation-duration);
+  animation: slidein var(--animation-duration);
 }
 
 @keyframes slidein {
@@ -169,8 +170,8 @@
 }
 
 .flowerImg {
-  -webkit-animation: jump 7s linear infinite;
-  animation: jump 7s linear infinite;
+  -webkit-animation: jump var(--animation-duration);
+  animation: jump var(--animation-duration);
 }
 
 @keyframes jump {
@@ -190,7 +191,7 @@
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .epilationText {
     font-size: 18px;
-    color: #0d0d0d;
+    color: var(--title-color);;
   }
 
   .epilationDesc {
@@ -229,7 +230,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .epilationText {
     font-size: 20px;
-    color: #0d0d0d;
+    color: var(--title-color);
   }
 }
 
@@ -252,7 +253,7 @@
 
 @media (max-width: 1023px) {
   .epilationSection {
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
 
   .epilationSection,
@@ -317,7 +318,7 @@
 
   .epilationText {
     font-size: 16px;
-    color: #0d0d0d;
+    color: var(--title-color);;
   }
 
   .iconWrapper {

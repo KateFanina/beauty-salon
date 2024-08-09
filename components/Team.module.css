@@ -1,10 +1,10 @@
 .teamSection {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   padding: 120px 0px;
 }
 
 .teamContainer {
-  background-color: #f9f3f0;
+  background-color: var(--primary-bg-color);
   display: flex;
   align-items: center;
 }
