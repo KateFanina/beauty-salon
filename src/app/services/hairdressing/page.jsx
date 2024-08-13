@@ -18,6 +18,7 @@ import creativeHaircut from '@public/creative_haircut.png';
 import classicHaircut from '@public/classic_haircut.png';
 import trandyHaircut from '@public/trandy_haircut.png';
 import styles from './hairdressing.module.css';
+import BackToTopButton from '@components/BackToTopButton';
 
 
 export const metadata = {
@@ -174,6 +175,7 @@ export default function HairdressingPage() {
           </div>
         </div>
       </section>
+      <BackToTopButton />
     </>
   );
 }

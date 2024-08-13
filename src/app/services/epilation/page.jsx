@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '../epilation/epilation.module.css';
+import BackToTopButton from '@components/BackToTopButton';
 import IconWax from '@components/icons/IconWax';
 import IconLegs from '@components/icons/IconLegs';
 import IconDepilation from '@components/icons/IconDepilation';
@@ -144,6 +145,7 @@ export default function EpilationPage() {
           </div>
         </div>
       </section>
+      <BackToTopButton />
     </>
   );
 }

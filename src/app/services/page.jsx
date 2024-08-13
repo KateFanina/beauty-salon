@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './services.module.css';
 import MainButton from '@components/MainButton';
+import BackToTopButton from '@components/BackToTopButton';
 import cleaning from '@public/ultrasonic_cleaning.webp';
 import flower from '@public/flower_shape_6.png';
 import shape from '@public/flower_shape_4.png';
@@ -129,6 +130,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <BackToTopButton />
     </main>
   );
 }

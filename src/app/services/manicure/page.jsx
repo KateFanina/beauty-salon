@@ -5,6 +5,7 @@ import gellish from '@public/gel_nail.jpg';
 import gelNail from '@public/manicure_gel.jpg';
 import Image from 'next/image';
 import MainButton from '@components/MainButton';
+import BackToTopButton from '@components/BackToTopButton';
 import nails1 from '@public/photo_manicure_1.png';
 import nails10 from '@public/photo_manicure_10.png';
 import nails101 from '@public/photo_manicure_6.png';
@@ -208,8 +209,8 @@ export default function ManicurePage() {
           <div className={styles.naiButtonWrapper}>
             <MainButton label='Більше' path="https://www.instagram.com/brows_nails_n.k/" target="_blank" />
           </div>
-         
         </div>
+        <BackToTopButton />
       </section>
     </>
   );

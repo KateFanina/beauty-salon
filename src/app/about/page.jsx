@@ -5,6 +5,7 @@ import IconFlower from '@components/icons/IconFlower';
 import IconSacura from '@components/icons/IconSacura';
 import IconSacuraTwo from '@components/icons/IconSacuraTwo';
 import hairBg from '@public/about_us_bg.jpg';
+import BackToTopButton from '@components/BackToTopButton';
 import Image from 'next/image';
 import styles from './about.module.css';
 
@@ -71,6 +72,7 @@ const AboutPage = () => {
           ))}
         </ul>
       </div>
+      <BackToTopButton />
     </section>
   );
 };

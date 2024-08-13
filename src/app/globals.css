@@ -23,6 +23,7 @@ body {
   background-size: 200px;
   background-color: var(--primary-bg-color);
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .container {

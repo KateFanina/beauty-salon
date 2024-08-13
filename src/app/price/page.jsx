@@ -1,4 +1,5 @@
 import styles from '../price/price.module.css';
+import BackToTopButton from '@components/BackToTopButton';
 
 export const metadata = {
   title: 'Ціни салону краси у м.Сміла',

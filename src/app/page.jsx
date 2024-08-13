@@ -4,6 +4,7 @@ import styles from './page.module.css';
 import OurPoslugy from '@components/OurPoslugy';
 import Team from '@components/Team';
 import MainButton from '@components/MainButton';
+import BackToTopButton from '@components/BackToTopButton';
 
 export default function HomePage() {
   return (
@@ -34,6 +35,7 @@ export default function HomePage() {
       <section>
         <Team />
       </section>
+      <BackToTopButton />
     </main>
   );
 }
