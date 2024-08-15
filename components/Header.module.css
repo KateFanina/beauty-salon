@@ -14,6 +14,36 @@
   display: flex;
   gap: 10px;
 }
+.stickyNav{
+  position: static;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: var(--title-color);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09)
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+  background-color: var(--title-color);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  -webkit-animation: headerSticky .95s ease forwards;
+  animation: headerSticky 0.95s ease forwards;
+}
+
+@keyframes headerSticky {	
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
 .navigation {
   background-color: var(--title-color);

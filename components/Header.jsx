@@ -17,6 +17,22 @@ const Header = () => {
     themeChange(false);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const stickyNav = document.querySelector(`.${styles.stickyNav}`);
+      if (window.scrollY > 100) {
+        stickyNav.classList.add(styles.fixed);
+      } else {
+        stickyNav.classList.remove(styles.fixed);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+  
+
   const navDatas = [
     {
       id: 'home',
@@ -74,6 +90,7 @@ const Header = () => {
             </div>
           </li>
         </ul>
+        <div className={styles.stickyNav}>
         <nav className={styles.navigation}>
           <div className={styles.logoBg}>
             <Link href='/'>
@@ -98,6 +115,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+        </div>
       </div>
       <MobileMenu />
     </header>
@@ -105,3 +123,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

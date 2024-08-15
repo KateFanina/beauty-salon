@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import {React, useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -34,6 +34,20 @@ const MobileMenu = () => {
       label: 'Контакти',
     },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const drawerContent = document.querySelector('.drawer-content');
+      if (window.scrollY > 100) {
+        drawerContent.classList.add(styles.fixedMenu);
+      } else {
+        drawerContent.classList.remove(styles.fixedMenu);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
       <div className='container'>
@@ -47,7 +61,7 @@ const MobileMenu = () => {
               <RxHamburgerMenu />
             </label>
           </div>
-          <div className='drawer-side z-10'>
+          <div className='drawer-side z-[700]'>
             <label
               htmlFor='my-drawer'
               aria-label='close sidebar'
