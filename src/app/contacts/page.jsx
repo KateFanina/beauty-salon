@@ -1,7 +1,6 @@
 import { CiLocationOn, CiPhone } from 'react-icons/ci';
 import { SlClock } from 'react-icons/sl';
 import Image from 'next/image';
-import BackToTopButton from '@components/BackToTopButton';
 import styles from './page.module.css';
 import smileWoman from '@public/smiling_girl.png';
 import salon from '@public/photo_salon.jpg';
@@ -82,7 +81,6 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      <BackToTopButton/>
     </>
   );
 };

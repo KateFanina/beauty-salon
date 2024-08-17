@@ -19,7 +19,6 @@ const BackToTopButton = () => {
   useEffect(() => {
     window.addEventListener('scroll', calcScrollValue);
     calcScrollValue();
-
     return () => {
       window.removeEventListener('scroll', calcScrollValue);
     };

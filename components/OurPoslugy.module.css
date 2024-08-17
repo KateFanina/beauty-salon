@@ -17,9 +17,10 @@
 }
 
 .serviceCard {
-  position: relative;
-  top: -30px;
-  left: -15%;
+  bottom: 7%;
+  right: 15%;
+  display: flex;
+  justify-content: center;
   transition: var(--timing-duration);
 }
 
@@ -36,8 +37,7 @@
 .serviceIcon {
   fill: var(--primary-color);
   position: absolute;
-  top: 20px;
-  left: 25px;
+  top: 13%;
 }
 
 .serviceBlockImg {
@@ -135,17 +135,11 @@
   }
 
   .serviceCard {
-    top: -20px;
     left: 35%;
   }
 
   .serviceBlocks {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .serviceCard {
-    top: -20px;
-    left: 35%;
   }
 
   .serviceBlocks {
@@ -162,6 +156,7 @@
     font-size: 14px;
     height: 8rem;
   }
+
   .heroBtn {
     font-size: 12px;
     padding: 4px 12px;

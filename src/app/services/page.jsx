@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import styles from './services.module.css';
 import MainButton from '@components/MainButton';
-import BackToTopButton from '@components/BackToTopButton';
 import cleaning from '@public/ultrasonic_cleaning.webp';
 import flower from '@public/flower_shape_6.png';
 import shape from '@public/flower_shape_4.png';
@@ -114,7 +113,7 @@ export default function Services() {
               <Image src={cleaning} alt='ultrasonic-face-cleaning' />
             </div>
             <div className={styles.cosmeticText}>
-              <h2 className={styles.haircutTitleTwo}> Косметологічні послуги </h2>
+              {/* <h2 className={styles.haircutTitleTwo}> Косметологічні послуги </h2> */}
               <p className={styles.nailTitle}>
                 Дозвольте вашому обличчю знову засяяти здоров&apos;ям та свіжістю завдяки нашим
                 ефективним процедурам чистки обличчя, а також насолоджуйтеся красою та виразністю
@@ -130,7 +129,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <BackToTopButton />
     </main>
   );
 }

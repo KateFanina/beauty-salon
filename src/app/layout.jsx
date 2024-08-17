@@ -3,6 +3,7 @@ import './globals.css';
 import Head from 'next/head';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
+import BackToTopButton from '@components/BackToTopButton';
 
 const monte = Montserrat({
   weight: ['400', '700'],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={monte.className}>
         <Header />
         {children}
+        <BackToTopButton />
         <Footer />
       </body>
     </html>

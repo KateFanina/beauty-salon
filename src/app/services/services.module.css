@@ -155,8 +155,7 @@
   }
 }
 
-.haircutTitleOne,
-.haircutTitleTwo {
+.haircutTitleOne {
   font-size: 48px;
   line-height: 1.2;
   text-transform: capitalize;
@@ -164,6 +163,15 @@
   color: var(--primary-color);
   margin-bottom: 30px;
 }
+/* .haircutTitleOne,
+.haircutTitleTwo {
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+} */
 
 .cosmeticSection {
   background-color: var(--white-color);
@@ -261,9 +269,9 @@
     line-height: 1.3;
   }
 
-  .haircutTitleTwo {
+  /* .haircutTitleTwo {
     display: none;
-  }
+  } */
 
   .haircutText,
   .nailTitle {
@@ -277,11 +285,11 @@
   }
 }
 
-@media (max-width: 1535px) {
+/* @media (max-width: 1535px) {
   .haircutTitleTwo {
     display: none;
   }
-}
+} */
 
 @media (max-width: 1023px) {
 

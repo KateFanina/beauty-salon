@@ -31,7 +31,10 @@
   .teamText {
     width: 100%;
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
+  }
+  .teamText {
+    line-height: 1.7;
   }
 
   .myPhoto {
@@ -40,6 +43,7 @@
     display: flex;
     justify-content: center;
   }
+  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -52,13 +56,14 @@
   .myPhoto {
     padding-left: 20px;
   }
+  .teamText {
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 1023px) {
   .teamSection {
     padding: 60px 0px;
   }
-  .teamText {
-    line-height: 1.4;
-  }
+ 
 }

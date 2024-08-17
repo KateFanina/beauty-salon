@@ -134,8 +134,8 @@
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .hairTool {
-    bottom: 55%;
-    left: 5%;
+    bottom: 50%;
+    left: 7%;
     z-index: -1;
   }
 }
@@ -203,9 +203,12 @@
 
 @media (max-width: 639px) {
   .hairTool {
-    bottom: 55%;
-    left: 1%;
+    bottom: 47%;
+    left: 2%;
     z-index: -1;
+  }
+  .aboutHaircut{
+    width: auto;
   }
   
   .aboutDescription {

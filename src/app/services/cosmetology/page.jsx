@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { BsClockHistory } from 'react-icons/bs';
-import BackToTopButton from '@components/BackToTopButton';
 import flowerOneShape from '@public/flower_shape_2.png';
 import flowerShape from '@public/flower_shape_1.png';
 import IconBeauty from '@components/icons/IconBeauty';
@@ -136,7 +135,6 @@ export default function CosmetologyPage() {
           </div>
         </div>
       </section>
-      <BackToTopButton />
     </>
   );
 }
