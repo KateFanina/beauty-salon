@@ -6,10 +6,13 @@ This site is the official web page of a beauty salon that offers a wide range of
 
 **Services**: This page presents a detailed list of services provided by the salon, with a description of each of them. This includes:
 
-Hairdressing services: We offer modern haircuts and coloring for all types of hair, taking into account the individual wishes of clients.
-Nail services: Manicure and pedicure, which includes a full range of hand and foot care services, including pedicure, classic manicure, gel polish, nail design, and paraffin therapy for hands. There is also a gallery of works
-Hair removal services: Waxing and sugaring are painless procedures for removing unwanted hair using wax and sugar paste.
-Cosmetology services:
+**Hairdressing services:** 
+We offer modern haircuts and coloring for all types of hair, taking into account the individual wishes of clients.
+**Nail services:** 
+Manicure and pedicure, which includes a full range of hand and foot care services, including pedicure, classic manicure, gel polish, nail design, and paraffin therapy for hands. There is also a gallery of works
+**Hair removal services:**
+ Waxing and sugaring are painless procedures for removing unwanted hair using wax and sugar paste.
+**Cosmetology services:**
 Ultrasonic facial cleaning: Deep cleaning of the facial skin using ultrasound, which promotes cell renewal and improves skin texture.
 Eyelash and eyebrow care: Lamination, tinting and correction of eyebrows, including both wax and mechanical methods.
 Lamination of eyelashes and eyebrows: Procedures that give eyelashes and eyebrows a well-groomed appearance, additional volume and a beautiful curve.
