@@ -32,7 +32,7 @@ const BackToTopButton = () => {
     <div
       className={styles.buttonUp}
       style={{
-        display: visible ? 'grid' : 'none',
+        display: visible ? 'flex' : 'none',
         background: `conic-gradient(#c28565 ${scrollValue}%, #ffffff ${scrollValue}%)`,
       }}
       onClick={handleClick}

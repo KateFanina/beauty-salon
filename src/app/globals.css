@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css?family=Balsamiq+Sans:wght@400;700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext&effect=fire-animation|neon|outline'); */
 
 :root {
   --primary-color: #c28565;
@@ -23,7 +22,6 @@ body {
   background-size: 200px;
   background-color: var(--primary-bg-color);
   min-height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .container {

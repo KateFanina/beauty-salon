@@ -31,6 +31,8 @@ export const metadata = {
 };
 
 export default function ManicurePage() {
+
+
   const nailDatas = [
     {
       getImg: () => <Image src={classicTwo} alt='classic-manicure' />,
