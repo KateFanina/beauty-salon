@@ -20,7 +20,7 @@ import Pedicure from '@components/icons/Pedicure';
 import pedicureImg from '@public/pedicure.jpg';
 import styles from './manicure.module.css';
 import slides from './manicureData';
-import Images from './Images';
+import ManicureGallery from './ManicureGallery';
 
 export default function ManicurePage() {
   const [index, setIndex] = useState(-1);
@@ -141,7 +141,7 @@ export default function ManicurePage() {
       <section className={styles.nailWorkBlock}>
         <div className='container'>
           <h1 className={styles.galleryTitle}>Галерея </h1>
-          <Images manicureData={slides} onClick={(currentIndex) => setIndex(currentIndex)} />
+          <ManicureGallery manicureData={slides} onClick={(currentIndex) => setIndex(currentIndex)} />
           <Lightbox
             plugins={[Thumbnails, Fullscreen, Counter]}
             index={index}
