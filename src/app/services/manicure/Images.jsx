@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './manicure.module.css';
 
 export default function Images(props) {
@@ -12,7 +13,7 @@ export default function Images(props) {
       {manicureData &&
         manicureData.map((slide, index) => (
           <li onClick={() => handleClickImage(index)} className={styles.nailWorkItem} key={index}>
-            <img src={slide.src} alt={slide.alt} />
+            <Image src={slide.src} alt={slide.alt} width={300} height={300}/>
           </li>
         ))}
     </ul>
