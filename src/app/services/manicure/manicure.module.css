@@ -9,7 +9,8 @@
 .heroTitle {
   font-size: 60px;
   line-height: 1.2;
-  color: var(--title-color);;
+  color: var(--title-color);
+  ;
   margin-bottom: 60px;
 }
 
@@ -89,6 +90,7 @@
   justify-content: center;
   gap: 20px;
   margin-bottom: 60px;
+  cursor: pointer;
   transition: var(--timing-duration);
 }
 
@@ -102,7 +104,9 @@
 
 .nailWorkItem img {
   max-width: 230px;
+  width: 230px;
   max-height: 229px;
+  height: 229px;
 }
 
 .galleryTitle {
@@ -230,6 +234,7 @@
     font-size: 32px;
     line-height: 1.7;
   }
+
   .heroTitleWrapper {
     width: 300px;
   }
@@ -251,7 +256,7 @@
 }
 
 @media (max-width: 767px) {
-    .nailList {
+  .nailList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,6 +283,7 @@
     text-align: center;
     margin-bottom: 0;
   }
+
   .heroTitleWrapper {
     width: 150px;
   }
@@ -298,7 +304,7 @@
     font-size: 14px;
   }
 
-  .nailIcon{
+  .nailIcon {
     margin-right: 12px;
   }
 }
