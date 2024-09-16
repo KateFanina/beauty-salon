@@ -18,6 +18,18 @@ import NaiPolish from '@components/icons/NailPolish';
 import parafinOne from '@public/parafin_hands.jpg';
 import Pedicure from '@components/icons/Pedicure';
 import pedicureImg from '@public/pedicure.jpg';
+import nails1 from '@public/photo_manicure_1.png';
+import nails10 from '@public/photo_manicure_10.png';
+import nails101 from '@public/photo_manicure_6.png';
+import nails11 from '@public/photo_manicure_11.png';
+import nails12 from '@public/photo_manicure_12.png';
+import nails13 from '@public/photo_manicure_13.png';
+import nails14 from '@public/photo_pedicure_1.png';
+import nails15 from '@public/photo_pedicure_2.png';
+import nails2 from '@public/photo_manicure_2.png';
+import nails4 from '@public/photo_manicure_4.png';
+import nails5 from '@public/photo_manicure_5.png';
+import nails9 from '@public/photo_manicure_3.png';
 import styles from './manicure.module.css';
 import slides from './manicureData';
 import ManicureGallery from './ManicureGallery';
@@ -63,7 +75,59 @@ export default function ManicurePage() {
       lable: 'Укріплення',
     },
   ];
+  const photoDatas = [
+    {
+      getImg: () => <Image src={nails1} alt='photo-manicure' />,
+      id: 'manicure',
+    },
+    {
+      getImg: () => <Image src={nails2} alt='nail-design' />,
+      id: 'design',
+    },
+    {
+      getImg: () => <Image src={nails9} alt='nail-design-abstraction' />,
+      id: 'abstraction',
+    },
+    {
+      getImg: () => <Image src={nails4} alt='nail-design-delicate' />,
+      id: 'delicate',
+    },
+    {
+      getImg: () => <Image src={nails5} alt='nail-design-pink' />,
+      id: 'pink0',
+    },
+    {
+      getImg: () => <Image src={nails101} alt='nail-design-sea-​​wave' />,
+      id: 'sea',
+    },
+    {
+      getImg: () => <Image src={nails10} alt='nail-design-strict' />,
+      id: 'strict',
+    },
+    {
+      getImg: () => <Image src={nails11} alt='nail-design-classic' />,
+      id: 'classic',
+    },
+    {
+      getImg: () => <Image src={nails12} alt='nail-design-bright' />,
+      id: 'bright',
+    },
+    {
+      getImg: () => <Image src={nails13} alt='nail-design-zebra' />,
+      id: 'zebra',
+    },
+    {
+      getImg: () => <Image src={nails14} alt='pedicure-design-pink' />,
+      id: 'pink',
+    },
+    {
+      getImg: () => <Image src={nails15} alt='pedicure-design-black-and-white' />,
+      id: 'black',
+    },
+  ];
 
+  console.log({ index });
+  
   return (
     <>
       <section className={styles.nailBg}>
@@ -141,14 +205,27 @@ export default function ManicurePage() {
       <section className={styles.nailWorkBlock}>
         <div className='container'>
           <h1 className={styles.galleryTitle}>Галерея </h1>
-          <ManicureGallery manicureData={slides} onClick={(currentIndex) => setIndex(currentIndex)} />
-          <Lightbox
-            plugins={[Thumbnails, Fullscreen, Counter]}
-            index={index}
-            open={index >= 0}
-            close={() => setIndex(-1)}
-            slides={slides}
-          />
+          <ul className={styles.nailWorkList}>
+            {photoDatas.map((photoData, index) => (
+              <li
+                onClick={() => setIndex(index)}
+                className={styles.nailWorkItem}
+                key={photoData.id}
+              >
+                {photoData.getImg()}
+              </li>
+            ))}
+          </ul>
+          {index >= 0 && (
+            <Lightbox
+              plugins={[Thumbnails, Fullscreen, Counter]}
+              index={index}
+              open={index >= 0}
+              close={() => setIndex(-1)}
+              slides={slides}
+              render={{ slide: ManicureGallery, offset: index }}
+            />
+          )}
           <div className={styles.naiButtonWrapper}>
             <MainButton
               label='Більше'
