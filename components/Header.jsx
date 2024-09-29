@@ -31,7 +31,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  
+  const contactDatas = [
+    {
+      getIcon: () => <CiLocationOn />,
+      id: 'adress',
+      lable: 'Наша адреса',
+      text: 'м. Сміла, вулиця 40-річчя Перемоги, 6',
+    },
+    {
+      getIcon: () => <CiPhone />,
+      id: 'phone',
+      lable: 'Телефон',
+      text: '+380631736533',
+    },
+    {
+      getIcon: () => <SlClock />,
+      id: 'work-ours',
+      lable: 'Години роботи',
+      text: 'Вт - Нд: 9:00 - 18:00'
+    },
+  ];
 
   const navDatas = [
     {
@@ -65,30 +84,22 @@ const Header = () => {
     <header>
       <div className={styles.stiky}>
         <ul className={`container ${styles.navList}`}>
-          <li className={styles.navItem}>
-            <CiLocationOn />
-            <div className={styles.navInfo}>
-              <span>Наша адреса:</span>
-              <p> м. Сміла, вул. 40-річчя Перемоги, 6</p>
-            </div>
-          </li>
-          <li className={styles.navItem}>
-            <CiPhone />
-            <div className={styles.navInfo}>
-              <span>
-                Наш телефон:
-                <br />
-              </span>
-              <Link href='+380631736533'>+380631736533</Link>
-            </div>
-          </li>
-          <li className={styles.navItem}>
-            <SlClock />
-            <div className={styles.navInfo}>
-              <span>Години роботи:</span>
-              <p>Вт - Нд: 9:00 - 18:00</p>
-            </div>
-          </li>
+              {contactDatas.map((contactData) => (
+                <li className={styles.navItem} key={contactData.id}>
+                  {contactData.getIcon()}
+                  <div className={styles.navInfo}>
+                  <span>{contactData.lable}<br/></span>
+                  {contactData.id !== "phone" && (
+                  <p>{contactData.text}</p>
+                  )}
+                   {contactData.id === 'phone' && (
+                      <a className={styles.media} href={`tel:${contactData.text}`}>
+                        {contactData.text}
+                      </a>
+                    )}
+                  </div>
+                </li>
+              ))}
         </ul>
         <div className={styles.stickyNav}>
         <nav className={styles.navigation}>

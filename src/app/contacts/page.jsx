@@ -38,7 +38,7 @@ const Contacts = () => {
       <section className={styles.ourContacts}>
         <div className='container'>
           <div className={styles.contactUs}>
-          <h4 className={styles.contactUsTitle}>Зв&apos;яжіться з нами</h4>
+            <h4 className={styles.contactUsTitle}>Зв&apos;яжіться з нами</h4>
             <div>
               <Image src={smileWoman} alt='smile-woman' />
             </div>
@@ -55,8 +55,15 @@ const Contacts = () => {
                   <div className={styles.infoIcon}>{contactData.getIcon()}</div>
                   <div>
                     <h2 className={styles.infoItemTitle}>{contactData.lable}</h2>
-                    <p className={styles.infoItemText}>{contactData.text}</p>
+                    {contactData.id !== "phone" && (
+                      <p className={styles.infoItemText}>{contactData.text}</p>
+                    )}
                     <p className={styles.infoItemText}>{contactData.desc}</p>
+                    {contactData.id === 'phone' && (
+                      <a className={styles.media} href={`tel:${contactData.text}`}>
+                        {contactData.text}
+                      </a>
+                    )}
                   </div>
                 </li>
               ))}
