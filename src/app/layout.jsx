@@ -12,22 +12,25 @@ const monte = Montserrat({
 
 export const metadata = {
   title: 'Салон краси Сміла',
-  description: 'Салон краси перукарня місто Сміла',
+  description:
+    'Наш салон краси пропонує фарбування волосся різної складності, чоловічі, жіночі, дитячі стрижки, манікюр, педикюр, шугаринг ультразвукове очищення обличчя. Запишіться на консультацію ☎️ +38 063 1736533',
 };
 
 export default function RootLayout({
-  title = 'hairdresser',
-  keywords = 'hair, hairdresser, salon, haircutter, nail, hair coloring, epilation',
-  description = 'hairdresser services',
+  title = metadata.title,
+  keywords = 'волосся, перукар, салон краси, стрижка, нігті, фарбування волосся, епіляція, шугаринг',
+  description = metadata.description,
   children,
 }) {
   return (
-    <html lang="ua">
-       <Head>
-          <title>{title}</title>
-          <meta name="description" content={description} />
-          <meta name="keywords" content={keywords} />
-        </Head>
+    <html lang='uk'>
+      <Head>
+        <title>{title}</title>
+        <meta name='description' content={description} />
+        <meta name='keywords' content={keywords} />
+        <meta name='robots' content='index, follow' />
+        <meta name="google-site-verification" content="3vHEHEdTP6r6N8vz4VkdC9ONrI8Mps_5XVQe3fKGppE" />
+      </Head>
       <body className={monte.className}>
         <Header />
         {children}
